@@ -12,7 +12,7 @@ public class playerFollow : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    // Update is called once per frame......weed
     void Update()
     {
         Vector3 cameraPos = transform.position;
