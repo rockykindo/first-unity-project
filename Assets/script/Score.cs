@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine;
 
-public class score : MonoBehaviour
+public class Score : MonoBehaviour
 {
-    public Text scoreText;
+    public Text ScoreText;
+    int myScore = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,11 @@ public class score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        ScoreText.text = myScore.ToString();
+    }
+
+    public void AddScore(int score)
+    {
+        myScore = myScore + score;
     }
 }
